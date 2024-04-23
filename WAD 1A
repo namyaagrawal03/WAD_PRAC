@@ -1,0 +1,132 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saraswati College of Engineering Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="#">Home</a>
+    <a href="#">Students</a>
+    <a href="#">Courses</a>
+    <a href="#">Statistics</a>
+  </div>
+
+  <div class="content">
+    
+    <div class="navbar">
+        <div class="navbar-left">
+          <h1>Saraswati College of Engineering</h1>
+        </div>
+        <div class="navbar-right">
+          <img src="notification.png" alt="Notification" class="icon" width="20px">
+          <img src="user.png" alt="User" class="icon" width="20px">
+        </div>
+    </div>
+
+    <h2>Statistics</h2>
+    <div class="card">
+      <h3>Total Students</h3>
+      <p>500</p>
+    </div>
+    <div class="card">
+      <h3>Total Courses</h3>
+      <p>20</p>
+    </div>
+    <!-- Add more cards for other statistics -->
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+style.css
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+.content  .navbar {
+    background-color: rgb(12, 12, 200);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-left: 50px;
+  }
+  
+  .content .navbar h1 {
+    margin: 0;
+  }
+  
+
+.content .navbar-left{
+    padding-left: 300px;
+}
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(56, 56, 233);
+    padding-top: 50px; /* Adjusted for the navbar */
+  }
+  
+  .sidebar h2 {
+    color: white;
+    text-align: center;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar a:hover {
+    background-color: #555;
+  }
+  
+  .content {
+    margin-left: 250px; /* Adjusted for the sidebar width */
+    padding: 20px;
+    padding-top: 0px;
+    
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+ 
+
