@@ -1,0 +1,265 @@
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JQuery Mobile</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+
+    
+</head>
+<body>
+    <!--index.html-->
+    <div data-role="page" id="home">
+        <!--Header-->
+        <div data-role="header">
+            <h1 style="font-size: xx-large;">Amrutvahini College of Engineering</h1>
+            <h4>Approved by AICTE</h4>
+
+        </div>
+        <!--Navbar-->
+        <div data-role="navbar" data-grid="c" > <!--c means number of rows are four-->
+            <ul>
+                <li><a href="index.html" class="ui-btn-active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dept.html">Department</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Content-->
+        <div data-role="content">
+            <h3 style="color:green">Welcome to Amrutvahini College Of Engineering </h3>
+            <p style="text-align: justify;">Amrutvahini College of Engineering (AVCOE), Sangamner established in 1983 under the leadership of Hon. Late. Bhausaheb Thorat and progessing under the guidance of Hon. Shri. Balasaheb Thorat, Ex-Revenue Minister,Government of Maharashtra and Hon. Dr.Sudhir Tambe (Ex-MLC Nashik)</p>
+        
+            <h3 style ="color: green">Vision</h3>
+            <p style="text-align: justify;">To create opportunities for rural students to become able engineers and technocrats through continual excellence in engineering education.</p>
+        
+            <h3 style ="color: green">Mission</h3>
+            <p style="text-align: justify;">Our mission is to create self disciplined, physically fit, mentally robust and morally strong engineers and technocrats with high degree of integrity and sense of purpose who are capable to meet challenges of ever advancing technology for the benefit of mankind and nature.
+                </p>
+        </div>
+
+        <!--Footer-->
+            <div data-role="footer">
+                <h3>Quick Access</h3>
+                <center>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="dept.html">Department</a><br>
+                <a href="contact.html">Contact</a><br>
+            </center>
+            </div>
+        
+       
+    </div>
+</body>
+</html>
+
+***************************************************************************
+
+about.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <title>JQuery Mobile</title>
+</head>
+<body>
+
+    <div data-role="page" id="about">
+        <!--Header-->
+        <div data-role="header">
+            <h1 style="font-size: xx-large;">Amrutvahini College of Engineering</h1>
+            <h4>Approved by AICTE</h4>
+
+        </div>
+
+        <!--Navbar-->
+        <div data-role="navbar" data-grid="c" > <!--c means number of rows are four-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="ui-btn-active">About</a></li>
+                <li><a href="dept.html">Department</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Content-->
+        <div data-role="content">
+           <div class="row">
+            <img src="1.jpeg" height="220 px" width="40%">
+            <img src="2.jpeg" height="220 px" width="40%">
+           </div>
+
+           <div class="row">
+            <img src="3.jpeg" height="220 px" width="40%">
+            <img src="4.jpeg" height="220 px" width="40%">
+           </div>
+        </div>
+
+        <!--Footer-->
+            <div data-role="footer">
+                <h3>Quick Access</h3>
+                <center>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="dept.html">Department</a><br>
+                <a href="contact.html">Contact</a><br>
+            </center>
+            </div>
+        
+       
+    </div>
+</body>
+</html>
+
+
+**************************************************************************
+
+dept.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <title>JQuery Mobile</title>
+</head>
+<body>
+
+    <div data-role="page" id="dept">
+        <!--Header-->
+        <div data-role="header">
+            <h1 style="font-size: xx-large;">Amrutvahini College of Engineering</h1>
+            <h4>Approved by AICTE</h4>
+
+        </div>
+
+        <!--Navbar-->
+        <div data-role="navbar" data-grid="c" > <!--c means number of rows are four-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="dept.html" class="ui-btn-active">Department</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Content-->
+        <div data-role="content">
+           <ul data-role="listview">
+            <li><a href="#">Computer Engineering</a></li>
+            <li><a href="#">Civil Engineering</a></li>
+            <li><a href="#">Automation Engineering</a></li>
+            <li><a href="#">Electronic Engineering</a></li>
+            <li><a href="#">Chemical Engineering</a></li>
+            <li><a href="#"> Information Technology</a></li>
+            <li><a href="#">Mechanical Engineering</a></li>
+           </ul>
+        </div>
+
+        <!--Footer-->
+            <div data-role="footer">
+                <h3>Quick Access</h3>
+                <center>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="dept.html">Department</a><br>
+                <a href="contact.html">Contact</a><br>
+            </center>
+            </div>
+        
+       
+    </div>
+</body>
+</html>
+
+***************************************************************************************
+
+contact.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+    <title>JQuery Mobile</title>
+</head>
+<body>
+
+    <div data-role="page" id="contact">
+        <!--Header-->
+        <div data-role="header">
+            <h1 style="font-size: xx-large;">Amrutvahini College of Engineering</h1>
+            <h4>Approved by AICTE</h4>
+
+        </div>
+
+        <!--Navbar-->
+        <div data-role="navbar" data-grid="c" > <!--c means number of rows are four-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="dept.html" >Department</a></li>
+                <li><a href="contact.html" class="ui-btn-active">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Content-->
+        <div data-role="content">
+            <label for="text-basic">Name</label>
+            <input type="text" name="text-basic" id="text-basic" value="">
+
+            <label for="text-basic">Email</label>
+            <input type="email" name="text-basic" id="text-basic" value="">
+
+            <label for="text-basic">Mobile</label>
+            <input type="text" name="text-basic" id="text-basic" value="">
+
+            <label for="text-basic">Address</label>
+            <input type="text" name="text-basic" id="text-basic" value="">
+
+            <button class="ui-btn-active">Submit</button>
+        </div>
+
+        <!--Footer-->
+            <div data-role="footer">
+                <h3>Quick Access</h3>
+                <center>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About</a><br>
+                <a href="dept.html">Department</a><br>
+                <a href="contact.html">Contact</a><br>
+            </center>
+            </div>
+        
+       
+    </div>
+</body>
+</html>
+
