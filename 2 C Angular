@@ -1,0 +1,96 @@
+app.component.html
+
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter name:" name="Name"><br>
+<input type="text" #address placeholder="Enter Address:" name="Address"><br>
+<input type="email" #email placeholder="Enter email:" name="Email"><br>
+<input type="password" #password placeholder="Enter password:" name="Password"> <br> <br>
+
+<button (click)="getValue(name.value, address.value, email.value, password.value)">Register</button>
+
+<!--Login-->
+
+<h1>Login</h1>
+<input type="email" #loginemail placeholder="Enter email:" name="loginEmail"><br>
+<input type="password" #loginpassword placeholder="Enter password:" name="loginPassword"><br><br>
+<button (click)="login(loginemail.value, loginpassword.value)">Login</button>
+
+
+
+
+<h1>Registered Data</h1>
+
+<p>Name: {{displayname}}</p>
+<p>Address: {{displayaddress}}</p>
+<p>Email: {{displayemail}}</p>
+
+--------------------------------------------------------------------------------
+
+
+**app.component.ts**
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.css'
+})
+export class AppComponent {
+  title = 'Registration ';
+
+  displayname='';
+  displayaddress='';
+  displayemail='';
+  the_password='';
+
+  getValue(name:string, address:string, email:string, password:string)
+  {
+    this.displayname=name;
+    this.displayaddress=address;
+    this.displayemail=email;
+    this.the_password=password;
+
+
+    alert('Registration successful');
+
+  }
+
+
+
+  login(email: string, password: string) {
+    // Example: Check if email and password match some stored credentials
+    const validEmail = this.displayemail;
+    const validPassword = this.the_password;
+  
+    if (email === validEmail && password === validPassword) {
+      alert('Login successful');
+      
+    } else {
+      alert('Login failed. Please check your credentials.');
+    }
+  }
+}
+
+
+-------------------------------------------------------------------------------
+app.component.css
+
+input{
+    height: 30px;
+    width: 150px;
+    padding-left: 20px;
+    margin-left: 50px;
+}
+
+h1{
+    margin-left: 50px;
+}
+
+button{
+    margin-left: 100px;
+}
+
