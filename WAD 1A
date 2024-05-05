@@ -9,8 +9,6 @@ index.html
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-
   <div class="sidebar">
     <h2>Dashboard</h2>
     <a href="#">Home</a>
@@ -20,31 +18,87 @@ index.html
   </div>
 
   <div class="content">
-    
-    <div class="navbar">
-        <div class="navbar-left">
-          <h1>Saraswati College of Engineering</h1>
+      <div class="navbar">
+          <div class="navbar-left">
+            <h1>Saraswati College of Engineering</h1>
+          </div>
+
+          <div class="navbar-right">
+            <img src="notification.png" alt="Notification" class="icon" width="20px">
+            <img src="user.png" alt="User" class="icon" width="20px">
+          </div>
+    </div>
+
+    <br>
+
+    <div class="card-row">
+        <div class="card">
+            <div class="card1">
+                <div class="box">
+                    <h3>Total Students</h3>
+                    <p>500</p>
+                </div>
+
+                <div class img-icon>
+                      <img src="students.png" width="190px">
+                </div>
+            </div>
         </div>
-        <div class="navbar-right">
-          <img src="notification.png" alt="Notification" class="icon" width="20px">
-          <img src="user.png" alt="User" class="icon" width="20px">
+
+        <div class="card">
+              <div class="card1">
+                  <div class="box">
+                      <h3>Total Courses</h3>
+                      <p>20</p>
+                  </div>
+                  
+                  <div class img-icon>
+                      <img src="courses.png" width="290px">
+                  </div>
+            </div>
         </div>
     </div>
 
-    <h2>Statistics</h2>
-    <div class="card">
-      <h3>Total Students</h3>
-      <p>500</p>
+
+    <div class="card-row">
+    <!-- Table Card -->
+    <div class="card table-card">
+      <h3>Student Details</h3>
+      <p>-----------------------------------------------------</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll No.</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>001</td>
+            <td>Computer Science</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>002</td>
+            <td>Electrical Engineering</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
     </div>
-    <div class="card">
-      <h3>Total Courses</h3>
-      <p>20</p>
+
+    <!-- Image Card -->
+    <div class="card image-card">
+      <h3>Results</h3>
+      <img src="result.jpeg" alt="College Campus">
     </div>
-    <!-- Add more cards for other statistics -->
+    </div>
+
   </div>
 </body>
 </html>
-
 
 
 
@@ -63,10 +117,12 @@ body {
     background-color: rgb(12, 12, 200);
     color: white;
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     padding-left: 50px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
   }
   
   .content .navbar h1 {
@@ -110,23 +166,64 @@ body {
     background-color: #555;
   }
   
-  .content {
-    margin-left: 250px; /* Adjusted for the sidebar width */
-    padding: 20px;
-    padding-top: 0px;
-    
-  }
-  
-  .card {
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
   .card h3 {
     margin-top: 0;
   }
+
+  /* Existing CSS */
+.content{
+  margin-left: 260px; /* Adjusted for the sidebar width */
+  padding: 0px;
+   padding-top: 0px; /* Adjusted padding-top to create space between heading and cards */
+}
+
+
+
+.card {
+  flex: 1 1 300px; /* Added to make cards flexible and maintain equal width */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px; /* Added margin for spacing between cards */
+  box-sizing: border-box; /* Added to include padding in the width calculation */
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.4);
+
+}
+
+/* Additional styles for the table */
+.table-card table {
+  width: 100%;
   
+}
+
+.table-card th,
+.table-card td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Additional styles for the image */
+.image-card img {
+  width: 490px;
+  height: 290px;
+}
+
+  
+.content .card-row{
+  display: flex;
+}
+
+.content .card-row .card .card1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .card-row .card .card1 .box h3,p{
+  font-size: xx-large;
+}
+
+.content .card-row .card .card1 .img-icon{
+  width: 30px;
+}
  
 
